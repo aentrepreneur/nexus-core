@@ -1,6 +1,14 @@
+<div align="center">
+
 # NEXUS CORE
 
-Secure Infrastructure Stack for SMBs in LATAM.
+Secure Infrastructure Stack for SMBs in LATAM
+
+![Status](https://img.shields.io/badge/status-Stable-28a745?style=flat-square)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
+![Updated](https://img.shields.io/github/last-commit/aentrepreneur/nexus-core?style=flat-square)
+
+</div>
 
 ## Overview
 
@@ -50,19 +58,17 @@ Operational Layer
   Validation / Security Scanning / Agentic Extensions
 ```
 
-See `docs/architecture.md` for the public layer model.
-
 ## Deployment Profiles
 
-- Essential
-- Essential Plus
-- Intermediate
-- Intermediate Plus
-- Advanced
+| Profile | Adoption Stage |
+|---------|---------------|
+| **Essential** | Core identity + reverse proxy |
+| **Essential Plus** | + MFA services |
+| **Intermediate** | + Application services |
+| **Intermediate Plus** | + Monitoring + automation |
+| **Advanced** | + Agentic operational layers |
 
 The profiles allow progressive adoption based on RAM, operational maturity, and business needs.
-
-In public terms, the profiles represent adoption stages rather than exact production builds. See `examples/deployment-profiles.md` for the simplified model.
 
 ## Delivery Model
 
@@ -73,17 +79,9 @@ NEXUS CORE is designed to be presented as a staged infrastructure offer:
 - application and automation expansion over time
 - monitoring, evidence, and agentic layers for advanced operations
 
-## Why It Matters
+## Regional Fit
 
-NEXUS CORE treats infrastructure as a product line. The goal is not only to deploy services, but to package secure, maintainable, and extensible operational environments for SMB customers in LATAM.
-
-It also helps translate infrastructure work into language that buyers can understand:
-
-- operational continuity
-- stronger access control
-- reduced fragmentation
-- maintainable modernization
-- clearer support boundaries
+NEXUS CORE is especially relevant in Guatemala and LATAM contexts where budget, supportability, maintainability, and staged rollout often matter more than maximum feature density on day one.
 
 ## Use Cases
 
@@ -93,31 +91,12 @@ It also helps translate infrastructure work into language that buyers can unders
 - Workflow automation and monitoring stacks
 - Multi-service foundations for managed operations
 
-## Regional Fit
-
-NEXUS CORE is especially relevant in Guatemala and LATAM contexts where budget, supportability, maintainability, and staged rollout often matter more than maximum feature density on day one.
-
-## Repository Structure
-
-```text
-nexus-core/
-  README.md
-  docs/
-    architecture.md
-    deployment-profiles.md
-    roadmap.md
-    use-cases.md
-  examples/
-    deployment-profiles.md
-    public-topology.txt
-```
-
 ## Documentation
 
-- `docs/architecture.md`: public architecture and layer model
-- `docs/deployment-profiles.md`: staged adoption model
-- `docs/use-cases.md`: target environments and outcomes
-- `docs/roadmap.md`: public direction for the stack
+- `docs/architecture.md` — public architecture and layer model
+- `docs/deployment-profiles.md` — staged adoption model
+- `docs/use-cases.md` — target environments and outcomes
+- `docs/roadmap.md` — public direction for the stack
 
 ## Current Direction
 
@@ -125,3 +104,11 @@ nexus-core/
 - Better operational evidence and validation flows
 - Public-safe architecture and deployment briefs
 - Regional adaptation for Guatemala and LATAM contexts
+
+## License
+
+MIT — see [LICENSE](LICENSE)
+
+## Author
+
+Angel Esquivel — [@aentrepreneur](https://github.com/aentrepreneur)
